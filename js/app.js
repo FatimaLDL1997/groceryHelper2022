@@ -79,6 +79,7 @@ save.addEventListener('click', function(){
     save.style.background = 'linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%)'
     save.style.color = '#ffffff'
 
+    window.scrollTo(0,0)
     
 
     setTimeout(()=>{
@@ -138,7 +139,6 @@ save.addEventListener('click', function(){
 })
 
 var items = JSON.parse(localStorage.getItem('c'))
-window.scrollTo(0,0)
 
 window.onload = function (){
     delLists.style.display = 'block'
