@@ -141,10 +141,10 @@ var items = JSON.parse(localStorage.getItem('c'))
 window.onload = function (){
     delLists.style.display = 'block'
     clear.style.display = 'none'
-    
+    window.scrollTo(0,0)
     console.log(padding)
     listContainer.style.paddingBottom = `${padding}px`
-    
+
     //prevents total from displaying after page is refreshed until a list btn is pressed 
     totalBox.style.opacity = 0
    
