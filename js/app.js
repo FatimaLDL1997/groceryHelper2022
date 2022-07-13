@@ -51,7 +51,7 @@ let attr;
 const save = document.querySelector('.middle__save');
 
 //adding items 
-let padding = 90; 
+var padding = 90; 
 
 darkMode.addEventListener('click', function(){
         // body.style.background = 'rgb(207 227 225 / 48%)'
