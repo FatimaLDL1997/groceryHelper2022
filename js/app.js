@@ -138,10 +138,11 @@ save.addEventListener('click', function(){
 })
 
 var items = JSON.parse(localStorage.getItem('c'))
+window.scrollTo(0,0)
+
 window.onload = function (){
     delLists.style.display = 'block'
     clear.style.display = 'none'
-    window.scrollTo(0,0)
     console.log(padding)
     listContainer.style.paddingBottom = `${padding}px`
 
