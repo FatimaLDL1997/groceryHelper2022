@@ -396,7 +396,7 @@ addList.addEventListener('click', function(){
 plus.addEventListener('click', function(){
     
    middle.style.paddingBottom = `${padding}px`
-   padding = parseInt(padding) + 50; 
+   padding = parseInt(padding) + 90; 
 
     plus.style.background = 'linear-gradient(180deg, #08665d 0%, rgb(147 243 165) 100%)'
     plus.style.color = '#ffffff'
