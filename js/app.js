@@ -79,7 +79,7 @@ save.addEventListener('click', function(){
     save.style.background = 'linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%)'
     save.style.color = '#ffffff'
   
-    middle.style.paddingBottom = `${padding}px`
+    listContainer.style.paddingBottom = `${padding}px`
 
     setTimeout(()=>{
         save.style.background = '#E9E8E8'
@@ -395,8 +395,8 @@ addList.addEventListener('click', function(){
 
 plus.addEventListener('click', function(){
     
-   middle.style.paddingBottom = `${padding}px`
-   padding = parseInt(padding) + 90; 
+   listContainer.style.paddingBottom = `${padding}px`
+   padding = parseInt(padding) + 50; 
 
     plus.style.background = 'linear-gradient(180deg, #08665d 0%, rgb(147 243 165) 100%)'
     plus.style.color = '#ffffff'
@@ -490,7 +490,7 @@ listContainer.addEventListener('click', function(){
     bins.forEach(function(bin){
         bin.addEventListener('click', function(e){
             padding = parseInt(padding) - 10; 
-            middle.style.paddingBottom = `${padding}px`
+            listContainer.style.paddingBottom = `${padding}px`
         
             e.currentTarget.parentElement.remove();//works really well
             binID = e.currentTarget.id ; 
