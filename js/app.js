@@ -50,6 +50,8 @@ let attr;
 
 const save = document.querySelector('.middle__save');
 
+//adding items 
+let padding = 90; 
 
 darkMode.addEventListener('click', function(){
         // body.style.background = 'rgb(207 227 225 / 48%)'
@@ -118,6 +120,7 @@ save.addEventListener('click', function(){
         
         lastIDClicked: lastIDClicked,  
         attr: attr, 
+        padding: padding, 
 
     }
 
@@ -182,6 +185,7 @@ window.onload = function (){
         
         lastIDClicked = items.lastIDClicked
 
+        padding = items.padding
         
 
         addListFun()//run this again to display the lists instaed of having to press new list again
@@ -387,8 +391,6 @@ addList.addEventListener('click', function(){
 });
 
 
-//adding items 
-let padding = 90; 
 plus.addEventListener('click', function(){
     
    middle.style.paddingBottom = `${padding}px`

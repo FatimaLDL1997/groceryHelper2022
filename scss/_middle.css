@@ -326,6 +326,12 @@ input {
   font-size: 3vmax;
 }
 
+@media screen and (max-width: 900px) {
+  .middle__plus {
+    margin: 18px;
+  }
+}
+
 .middle__totalValue {
   display: block;
   padding-right: 20px;
