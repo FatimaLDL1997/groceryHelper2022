@@ -79,6 +79,8 @@ save.addEventListener('click', function(){
     save.style.background = 'linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%)'
     save.style.color = '#ffffff'
   
+    middle.style.paddingBottom = `${padding}px`
+
     setTimeout(()=>{
         save.style.background = '#E9E8E8'
         save.style.color = '#000000'
