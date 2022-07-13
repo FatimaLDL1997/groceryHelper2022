@@ -78,8 +78,8 @@ save.addEventListener('click', function(){
 
     save.style.background = 'linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%)'
     save.style.color = '#ffffff'
-  
-    listContainer.style.paddingBottom = `${padding}px`
+
+    
 
     setTimeout(()=>{
         save.style.background = '#E9E8E8'
@@ -131,7 +131,7 @@ save.addEventListener('click', function(){
     }
 
     localStorage.setItem('c', JSON.stringify(new_data))
-    console.log(attr)
+    // console.log(attr)
     window.location.reload()//reloads the page to reflect the change
     
     
@@ -141,6 +141,9 @@ var items = JSON.parse(localStorage.getItem('c'))
 window.onload = function (){
     delLists.style.display = 'block'
     clear.style.display = 'none'
+    
+    console.log(padding)
+    listContainer.style.paddingBottom = `${padding}px`
     
     //prevents total from displaying after page is refreshed until a list btn is pressed 
     totalBox.style.opacity = 0
