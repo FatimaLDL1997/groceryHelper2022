@@ -118,7 +118,7 @@ input {
   color: black;
   background: #FFFFFF;
   border: 0.3vmax solid #45b4a9;
-  box-shadow: 0px 4px 4px #7be0dcb4, inset 10px 30px 12px #67aea635;
+  box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
   border-radius: 2vmax;
   font-size: 2vmax;
   font-family: 'Gentium Book Basic';
@@ -142,7 +142,7 @@ input {
   height: 3vmax;
   background: #FFFFFF;
   border: 0.3vmax solid #21B6A8;
-  box-shadow: 0px 4px 4px #7be0dcb4, inset 10px 30px 12px #67aea635;
+  box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
   border-radius: 2vmax;
   font-size: 2vmax;
   font-family: 'Gentium Book Basic';
@@ -212,7 +212,7 @@ input {
   height: 3vmax;
   background: linear-gradient(180deg, rgba(33, 182, 168, 0.68) 0%, rgba(163, 235, 177, 0.68) 100%);
   border-radius: 16px;
-  margin: 10px;
+  margin-top: 48px;
 }
 
 .middle__sections h3 {
@@ -286,8 +286,9 @@ input {
 .middle__editIns {
   display: none;
   text-align: center;
-  padding: 20px;
+  padding-top: 75px;
   font-style: italic;
+  font-size: large;
   font-weight: bold;
   color: #0e9588;
   font-family: fangsong;
@@ -295,14 +296,21 @@ input {
 
 .middle__alert {
   text-align: center;
-  padding: 5px;
+  padding-left: 129px;
+  padding-right: 129px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 6px;
   font-size: 20px;
   color: #331212;
   border: black;
-  margin: 20px;
-  display: none;
+  opacity: 0;
   font-weight: bold;
   font-family: 'Gentium Book Basic';
+  position: absolute;
+}
+
+.middle__alrtContainer {
   display: flex;
   justify-content: center;
 }

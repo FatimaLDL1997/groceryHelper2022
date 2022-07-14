@@ -50,20 +50,13 @@ let attr;
 
 const save = document.querySelector('.middle__save');
 
-//adding items 
 var padding = 90; 
 
 darkMode.addEventListener('click', function(){
-        // body.style.background = 'rgb(207 227 225 / 48%)'
-        // darkMode.style.color = 'white'
-
-        // document.querySelector('.header__title').style.color = 'white'
-
-        // body.classList.toggle('darkBackground')
+       
         middle.classList.toggle('darkBackground')
+        body.classList.toggle('darkBackground')
 
-        // body.style.background = 'rgb(0, 84, 88)'
-        // console.log(darkMode.children)
         darkMode.classList.toggle('darkText')
         document.querySelector('.header__title').classList.toggle('darkText')
         document.querySelector('.middle__editIns').classList.toggle('lightText')
@@ -79,7 +72,7 @@ save.addEventListener('click', function(){
     save.style.background = 'linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%)'
     save.style.color = '#ffffff'
 
-    window.scrollTo(0,0)
+    window.scrollTo(0,0)//brings the page to top after every reload even if list is pretty long
     
 
     setTimeout(()=>{
@@ -443,11 +436,11 @@ plus.addEventListener('click', function(){
             listBox[listID].innerHTML += `
             <div class="middle__list" id = "list${count}">
                 <div class="middle__column">
-                    <input class="middle__product" id = "${count}" placeholder = "eg. eggs" value= "" type="text">
+                    <input class="middle__product" id = "${count}" placeholder = "eg. bread" value= "" type="text">
                 </div>
                 <div class="middle__column">
                     <div class="middle__btnContainer"  id="${count}">
-                        <input class="middle__quantity"  id="${count}" value = " "   type="text" >
+                        <input class="middle__quantity"  id="${count}"   value = " "   type="text" >
                     </div>
                 
                 </div>
@@ -546,7 +539,7 @@ clear.addEventListener('click', function(e){
         product.forEach(function(p){
             let lID = p.parentElement.parentElement.parentElement.id; 
             if(lID == listID){
-                p.value = 0; 
+                p.value = ' '; 
                 p.setAttribute('value', p.value)
                 p.style.background = 'white'
             }
@@ -554,7 +547,7 @@ clear.addEventListener('click', function(e){
         quantity.forEach(function(q){
             let lID = q.parentElement.parentElement.parentElement.parentElement.id; 
             if(lID == listID){
-                q.value = 0; 
+                q.value = null; 
                 q.setAttribute('value', q.value)
                 q.style.background = 'white'
             }
@@ -562,7 +555,7 @@ clear.addEventListener('click', function(e){
         price.forEach(function(r){
             let lID = r.parentElement.parentElement.parentElement.id; 
             if(lID == listID){
-                r.value = 0; 
+                r.value = null; 
                 r.setAttribute('value', r.value)
                 r.style.background = 'white'
             }
@@ -765,10 +758,10 @@ function calTotal(){
 function alrtUser(string, color){
     let alrt = document.querySelector('.middle__alert');
     alrt.innerHTML = `${string}`; 
-    alrt.style.display = "block";
+    alrt.style.opacity = 1; 
     alrt.style.background = `${color}`; 
     setTimeout(()=>{
-        alrt.style.display = "none";  
+        alrt.style.opacity = 0;  
         alrt.innerHTML = ''; 
     }, 1000); 
 }
