@@ -329,12 +329,11 @@ input {
             font-size: 3vmax;
         }
         @media screen and (max-width: 900px){ 
-            
-            // width: 4vmax;
-            // height: 3vmax;
-            // border-radius: 2vmax;
     
             margin: 18px;
+        }
+        &:hover {
+            transform: scale(0.8);
         }
         
     }
