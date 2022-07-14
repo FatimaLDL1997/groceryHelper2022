@@ -81,11 +81,6 @@ save.addEventListener('click', function(){
         save.style.color = '#000000'
     }, 1000); 
     
-    alrtUser('All List Items Saved','linear-gradient(180deg, rgba(33, 182, 168, 0.68) 0%, rgba(163, 235, 177, 0.68) 100%)' )
-
-    //check the status on the display style of add list btn
-    
-    console.log('save')
     
     var new_data = {
 
