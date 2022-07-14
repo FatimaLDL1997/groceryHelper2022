@@ -61,11 +61,12 @@ darkMode.addEventListener('click', function(){
         document.querySelector('.header__title').classList.toggle('darkText')
         document.querySelector('.middle__editIns').classList.toggle('lightText')
         
-        
-        
-
     }
 )
+window.onscroll = function(){
+    listContainer.style.paddingBottom = `${padding}px`
+
+}
 
 save.addEventListener('click', function(){
 
@@ -138,6 +139,8 @@ window.onload = function (){
     clear.style.display = 'none'
     console.log(padding)
     listContainer.style.paddingBottom = `${padding}px`
+    
+    window.scrollTo(0,0)//brings the page to top after every reload even if list is pretty long
 
     //prevents total from displaying after page is refreshed until a list btn is pressed 
     totalBox.style.opacity = 0
