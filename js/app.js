@@ -284,6 +284,7 @@ function addListFun (){
 
 
     list.forEach(function(lst){     
+        lst.parentElement.children[listID].style.background = 'linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%)'
         
         lst.addEventListener('click', function(e){
 

@@ -371,6 +371,7 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 1;
+  padding-top: 26px;
 }
 
 .middle__listContent {

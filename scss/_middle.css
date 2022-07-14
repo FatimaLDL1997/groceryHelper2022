@@ -235,6 +235,7 @@ input {
   flex-direction: column;
   justify-content: center;
   opacity: 1;
+  padding-top: 26px;
 }
 
 .middle__listContent {
