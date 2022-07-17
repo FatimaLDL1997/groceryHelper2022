@@ -586,7 +586,7 @@ function setQuantity(quantity){
         q.addEventListener("keydown", function(e){
             let quantityID = e.currentTarget.parentElement.id; 
 
-            if(e.key === "Enter"){
+            if(e.key){
                 if(q.value == "" || isNaN(q.value)){
                     q.setAttribute('value', 0);
                     displayTotal(); 

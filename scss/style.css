@@ -1,10 +1,6 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: absolute;
   left: 0;
   top: 0;
@@ -12,8 +8,7 @@
   width: 100%;
   height: 69px;
   background: #21B6A8;
-  -webkit-box-shadow: -1px 11px 16px rgba(0, 0, 0, 0.25);
-          box-shadow: -1px 11px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: -1px 11px 16px rgba(0, 0, 0, 0.25);
   position: fixed;
 }
 
@@ -33,14 +28,11 @@
 }
 
 .header__darkMode:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .header__title {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: 'Jacques Francois';
   font-style: normal;
@@ -105,8 +97,7 @@ input {
   background: #a3ebb1;
   position: relative;
   border-style: hidden;
-  -webkit-filter: drop-shadow(10px 18px 7px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(10px 18px 7px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(10px 18px 7px rgba(0, 0, 0, 0.25));
   margin: 90px;
   padding: 9px;
   font-size: 3vmax;
@@ -116,13 +107,9 @@ input {
 
 .modal__modalContainer {
   padding-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .modal__exit {
@@ -135,8 +122,7 @@ input {
 
 .modal__exit:hover {
   color: #04332e;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .middle {
@@ -150,13 +136,8 @@ input {
 }
 
 .middle__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   opacity: 1;
 }
 
@@ -165,13 +146,8 @@ input {
 }
 
 .middle__column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 5px;
 }
 
@@ -186,24 +162,14 @@ input {
 }
 
 .middle__container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
   opacity: 0;
 }
 
 .middle__btnContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .middle__product {
@@ -213,8 +179,7 @@ input {
   color: black;
   background: #FFFFFF;
   border: 0.3vmax solid #45b4a9;
-  -webkit-box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
-          box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
+  box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
   border-radius: 2vmax;
   font-size: 2vmax;
   font-family: 'Gentium Book Basic';
@@ -238,8 +203,7 @@ input {
   height: 3vmax;
   background: #FFFFFF;
   border: 0.3vmax solid #21B6A8;
-  -webkit-box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
-          box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
+  box-shadow: 0px 1px 2px #7be0dcb4, inset 6px 3px 1px #67aea635;
   border-radius: 2vmax;
   font-size: 2vmax;
   font-family: 'Gentium Book Basic';
@@ -257,19 +221,11 @@ input {
 }
 
 .middle__lstBtns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .middle__addListBtn {
@@ -278,16 +234,9 @@ input {
   height: 4vmax;
   margin-left: 7px;
   border-radius: 1.5vmax;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(41.15%, rgba(2, 118, 107, 0.67)), color-stop(87.5%, rgba(163, 235, 177, 0.67)));
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%);
   border-style: none;
   color: black;
@@ -310,32 +259,18 @@ input {
 }
 
 .middle__btnAlign {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding-bottom: 25px;
   padding-top: 35px;
 }
 
 .middle__sections {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 3vmax;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 182, 168, 0.68)), to(rgba(163, 235, 177, 0.68)));
   background: linear-gradient(180deg, rgba(33, 182, 168, 0.68) 0%, rgba(163, 235, 177, 0.68) 100%);
   border-radius: 16px;
   margin-top: 48px;
@@ -357,27 +292,16 @@ input {
 }
 
 .middle__content {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   opacity: 1;
   padding-top: 26px;
 }
 
 .middle__listContent {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   display: none;
 }
 
@@ -389,7 +313,6 @@ input {
   border-radius: 3vmax;
   margin-left: 5px;
   font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, from(#21b6a8ab), color-stop(95.83%, #21b6a859));
   background: linear-gradient(180deg, #21b6a8ab 0%, #21b6a859 95.83%);
   border-style: none;
   font-family: 'Gentium Book Basic';
@@ -405,19 +328,14 @@ input {
 }
 
 .middle__del {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 3vmax;
   color: #21B6A8;
 }
 
 .middle__del:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
   color: #073530;
 }
 
@@ -455,12 +373,8 @@ input {
 }
 
 .middle__alrtContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .middle__plus {
@@ -468,19 +382,11 @@ input {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
   width: 4vmax;
   height: 3vmax;
   border-radius: 2vmax;
@@ -501,8 +407,7 @@ input {
 }
 
 .middle__plus:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .middle__totalValue {
@@ -517,22 +422,15 @@ input {
 
 .middle__totalBox {
   height: 3vmax;
-  background: -webkit-gradient(linear, left top, left bottom, from(#21b6a8), to(#a3ebb1));
   background: linear-gradient(180deg, #21b6a8 0%, #a3ebb1 100%);
   border-radius: 16px;
   width: 100%;
   margin-top: 18px;
   margin-bottom: 1vmax;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-family: 'Gentium Book Basic';
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .middle__totalBox h2, .middle__totalBox h1 {
@@ -557,19 +455,16 @@ input {
   width: 3vmax;
   height: 3vmax;
   border-style: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
   background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
   border-radius: 1vmax;
   font-size: 2vmax;
   font-weight: bold;
   color: black;
-  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
-          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+  filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
 }
 
 .middle__instructions:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 @media screen and (max-width: 900px) {
@@ -585,19 +480,16 @@ input {
   width: 10vmax;
   height: 3vmax;
   border-style: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
   background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
   border-radius: 1vmax;
   font-size: 2vmax;
   font-weight: bold;
   color: black;
-  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
-          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+  filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
 }
 
 .middle__save:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 @media screen and (max-width: 900px) {
@@ -613,19 +505,16 @@ input {
   width: 12vmax;
   height: 3vmax;
   border-style: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
   background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
   border-radius: 1vmax;
   font-size: 2vmax;
   font-weight: bold;
   color: black;
-  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
-          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+  filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
 }
 
 .middle__btnClr:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 @media screen and (max-width: 900px) {
@@ -641,19 +530,16 @@ input {
   width: 12vmax;
   height: 3vmax;
   border-style: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
   background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
   border-radius: 1vmax;
   font-size: 2vmax;
   font-weight: bold;
   color: black;
-  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
-          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+  filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
 }
 
 .middle__delList:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 @media screen and (max-width: 900px) {
@@ -669,17 +555,10 @@ input {
   padding-top: 0.5vmax;
   padding-bottom: 0.5vmax;
   height: 3vmax;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 900px) {
@@ -713,4 +592,3 @@ input {
   font-size: 4vmin;
   margin-top: -22px;
 }
-/*# sourceMappingURL=style.css.map */
